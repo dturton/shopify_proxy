@@ -1,0 +1,22 @@
+{
+  "name": "shopify_proxy",
+  "version": "1.0.0",
+  "description": "Shopify Proxy App Node.JS example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edeuxk/shopify_proxy.git"
+  },
+  "author": "Eddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edeuxk/shopify_proxy/issues"
+  },
+  "homepage": "https://github.com/edeuxk/shopify_proxy#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
