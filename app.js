@@ -1,13 +1,14 @@
-var process = require('process');
 var express = require('express');
 var inspect = require('util').inspect;
 var crypto = require('crypto');
 var fs = require('fs');
 var querystring = require('querystring');
 
-var secrets = JSON.parse(fs.readFileSync('secrets.json', 'utf-8'));
+var secrets = JSON.parse(fs.readFileSync(process.env.SHARED_SECRET, 'utf-8'));
 
 var app = express();
+var dotenv = require('dotenv');
+dotenv.load({ path: 'env.conf' });
 
 app.get('/', function(req, res) {
   return res.status(200).send('this is the home page');
